@@ -1,0 +1,40 @@
+.clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+
+    &__company {
+        fill: #AFB1B8;
+
+        transition-property: fill, border-color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &__icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+}
+
+.clients__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 92px;
+    background-color: var(--white-color);
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+
+    &:hover,
+    &:focus {
+        border-color: var(--accent-color);
+    }
+
+    &:hover .clients__company,
+    &:focus .clients__company {
+        fill: var(--accent-color);
+    }
+}

@@ -1,0 +1,58 @@
+.form-agree {
+    display: flex;
+    justify-content: center;
+
+    margin-bottom: 30px;
+
+    text-align: center;
+
+    .checkbox-label {
+        color: var(--primary-text-color);
+        line-height: 1.71;
+
+        display: flex;
+        align-items: center;
+
+        cursor: pointer;
+    }
+
+    .checkbox {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        border: 0;
+        padding: 0;
+
+        white-space: nowrap;
+        clip-path: inset(100%);
+        clip: rect(0 0 0 0);
+        overflow: hidden;
+
+        &:checked+.icon {
+            background-color: var(--accent-color);
+            background-origin: border-box;
+            border-color: var(--accent-color);
+        }
+    }
+
+    & .icon {
+        display: inline-block;
+        width: 16px;
+        height: 15px;
+
+        border: var(--title-text-color) 2px solid;
+
+        border-radius: 2px;
+
+        margin-right: 7px;
+    }
+
+    & .link {
+        color: var(--accent-color);
+        text-decoration: underline;
+        margin-left: 4px;
+
+        cursor: pointer;
+    }
+}
