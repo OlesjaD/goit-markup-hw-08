@@ -1061,7 +1061,14 @@ textarea:focus-visible {
   left: 0;
   width: 100vw;
   height: 100vh;
-  padding: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 48px 40px;
   background-color: #ffffff;
   z-index: 999;
   -webkit-transform: translateX(100%);
@@ -1086,19 +1093,41 @@ textarea:focus-visible {
 
 .mobile-menu {
   padding: 0;
-  margin-top: 48px;
-  margin-left: 40px;
   list-style: none;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+  margin-bottom: auto;
 }
-
+.mobile-menu .item + .item {
+  margin-top: 32px;
+}
 .mobile-menu .link {
   display: block;
   color: #212121;
   text-decoration: none;
 }
 
-.mobile-menu .item + .item {
-  margin-top: 32px;
+.mobile-contacts {
+  margin-bottom: 64px;
+}
+.mobile-contacts .item {
+  margin-bottom: 32px;
+}
+.mobile-contacts .tel-link {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+}
+.mobile-contacts .mail-link {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
 }
 
 .mobile-socials {
@@ -1106,13 +1135,12 @@ textarea:focus-visible {
   display: -ms-flexbox;
   display: flex;
 }
-
 .mobile-socials .item + .item {
-  margin-left: 10px;
   color: var(--accent-color);
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
   line-height: 1.22;
   letter-spacing: 0.02em;
+  margin-left: 10px;
 }/*# sourceMappingURL=main.css.map */
