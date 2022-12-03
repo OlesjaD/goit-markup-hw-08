@@ -1,6 +1,21 @@
 .clients {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    
+    @media screen and (min-width:$desktop){
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+    
+    &__icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+
+        gap: 30px;
+    }
 
     &__company {
         fill: #AFB1B8;
@@ -10,23 +25,25 @@
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
 
-    &__icon {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 30px;
-    }
 }
 
 .clients__link {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 170px;
+    width: 210px;
     height: 92px;
     background-color: var(--white-color);
     border: 1px solid #AFB1B8;
     border-radius: 4px;
+
+    @media screen and (min-width:$tablet){
+        width: 226px;
+    }
+
+    @media screen and (min-width:$desktop){
+        width: 170px;
+    }
 
     &:hover,
     &:focus {

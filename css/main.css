@@ -67,6 +67,7 @@ textarea:focus-visible {
   margin-left: auto;
   margin-right: auto;
   padding: 0 15px;
+  outline: 2px solid red;
 }
 @media screen and (min-width: 480px) {
   .container {
@@ -413,11 +414,17 @@ textarea:focus-visible {
   padding-bottom: 94px;
 }
 .work__title {
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.17;
   text-align: center;
   color: var(--title-text-color);
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .work__title {
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
 }
 .work__box {
   display: -webkit-box;
@@ -572,17 +579,14 @@ textarea:focus-visible {
 }
 
 .clients {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
-.clients__company {
-  fill: #AFB1B8;
-  -webkit-transition-property: fill, border-color;
-  transition-property: fill, border-color;
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+@media screen and (min-width: 1200px) {
+  .clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 .clients__icon {
   display: -webkit-box;
@@ -594,7 +598,18 @@ textarea:focus-visible {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   gap: 30px;
+}
+.clients__company {
+  fill: #AFB1B8;
+  -webkit-transition-property: fill, border-color;
+  transition-property: fill, border-color;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients__link {
@@ -607,11 +622,21 @@ textarea:focus-visible {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 170px;
+  width: 210px;
   height: 92px;
   background-color: var(--white-color);
   border: 1px solid #AFB1B8;
   border-radius: 4px;
+}
+@media screen and (min-width: 768px) {
+  .clients__link {
+    width: 226px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients__link {
+    width: 170px;
+  }
 }
 .clients__link:hover, .clients__link:focus {
   border-color: var(--accent-color);
