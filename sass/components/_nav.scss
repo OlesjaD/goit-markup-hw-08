@@ -1,6 +1,7 @@
 .page-nav {
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 .nav {
@@ -8,57 +9,59 @@
 }
 
 .site-nav {
-    display: flex;
-    margin-left: 93px;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    color: var(--title-text-color);
+    display: none;
 
-    & .item {
+    @media screen and (min-width:$tablet) {
+        display: flex;
+        margin-left: 87px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        color: var(--title-text-color);
+    
+        & .item {
             margin-right: 50px;
             position: relative;
-
-        &:last-child {
+    
+            &:last-child {
                 margin-right: 0;
+            }
+        }
+    
+        & .current::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            display: block;
+            width: 100%;
+            height: 4px;
+            background: var(--accent-color);
+            border-radius: 2px;
+        }
+        & .link {
+            color: var(--title-text-color);
+            padding: 32px 0;
+            display: block;
+    
+            transition-property: color;
+            transition-duration: 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    
+            &:hover,
+            &:focus {
+                color: var(--accent-color);
+            }
+    
+            &.current {
+                color: var(--accent-color);
+            }
         }
     }
 
-    & .current::after {
-        content: "";
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        display: block;
-        width: 100%;
-        height: 4px;
-        background: var(--accent-color);
-        border-radius: 2px;
-    }
-}
-
-.site-nav .link {
-    font-weight: 500;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    color: var(--title-text-color);
-    padding: 32px 0;
-    display: block;
-
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-    &:hover,
-    &:focus {
-        color: var(--accent-color);
+    @media screen and (min-width:$desktop){
+        margin-left: 93px;
     }
     
-    &.current {
-        color: var(--accent-color);
-    }
 }
-
-
-
