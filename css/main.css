@@ -71,12 +71,12 @@ textarea:focus-visible {
 }
 @media screen and (min-width: 480px) {
   .container {
-    width: 450px;
+    width: 480px;
   }
 }
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px) {
   .container {
-    width: 737px;
+    width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -363,8 +363,14 @@ textarea:focus-visible {
 }
 
 .benefits {
-  padding-bottom: 94px;
-  padding-top: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .benefits {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 .benefits__features {
   display: -webkit-box;
@@ -372,15 +378,29 @@ textarea:focus-visible {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-}
-.benefits__item + .item {
-  margin-left: 30px;
+  gap: 30px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 .benefits__item {
-  width: 270px;
+  width: 450px;
+}
+@media screen and (min-width: 768px) {
+  .benefits__item {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .benefits__item {
+    width: 270px;
+  }
 }
 .benefits__icon {
-  width: 270px;
+  width: 450px;
   height: 120px;
   background-color: #F5F4FA;
   margin-bottom: 30px;
@@ -395,12 +415,28 @@ textarea:focus-visible {
       -ms-flex-pack: center;
           justify-content: center;
 }
+@media screen and (min-width: 768px) {
+  .benefits__icon {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .benefits__icon {
+    width: 270px;
+  }
+}
 .benefits__details {
   margin-bottom: 10px;
   line-height: 1.14;
   font-size: 14px;
+  text-align: center;
   text-transform: uppercase;
   color: var(--title-text-color);
+}
+@media screen and (min-width: 768px) {
+  .benefits__details {
+    text-align: left;
+  }
 }
 .benefits__description {
   line-height: 1.71;
@@ -412,6 +448,11 @@ textarea:focus-visible {
   display: -ms-flexbox;
   display: flex;
   padding-bottom: 94px;
+}
+@media screen and (max-width: 1199px) {
+  .work {
+    display: none;
+  }
 }
 .work__title {
   font-size: 28px;
