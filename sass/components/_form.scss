@@ -27,13 +27,18 @@
     left: 50%;
     transform: translate(-50%, -50%);
 
-    width: 528px;
-    min-height: 581px;
+    width: 450px;
+    min-height: 609px;
 
     background-color: var(--white-color);
     border-radius: 4px;
 
     transition: transform 500ms ease-out;
+
+    @media (min-width: 1200px) {
+        width: 528px;
+        min-height: 581px;
+    }
 
     .icon-close {
         fill: #000000;
@@ -71,19 +76,27 @@
 .modal-form {
     padding: 40px;
 
-    width: 528px;
+    width: 370px;
     margin-left: auto;
     margin-right: auto;
+
+    @media (min-width: 1200px) {
+        width: 528px;
+    }
 
     .title-modal {
         font-weight: 700;
         font-size: 20px;
-        line-height: 1.15;
+        line-height: 1.5;
         text-align: center;
         letter-spacing: 0.03em;
 
         color: var(--title-text-color);
 
         margin-bottom: 12px;
+
+        @media (min-width: 1200px) {
+            line-height: 1.15;
+        }
     }
 }
