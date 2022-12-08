@@ -1,19 +1,31 @@
 .form-agree {
     display: flex;
-    justify-content: center;
+    align-items: center;
 
     margin-bottom: 30px;
 
     text-align: center;
 
+    @media screen and (min-width:$desktop) {
+        justify-content: center;
+    }
+
+
     .checkbox-label {
         color: var(--primary-text-color);
-        line-height: 1.71;
+        font-size: 12px;
+        line-height: 1.17;
 
-        display: flex;
-        align-items: center;
+        
 
         cursor: pointer;
+
+        @media screen and (min-width:$desktop) {
+            display: flex;
+            align-items: center;
+            font-size: 14px;
+            line-height: 1.71;
+        }
     }
 
     .checkbox {
@@ -51,8 +63,11 @@
     & .link {
         color: var(--accent-color);
         text-decoration: underline;
-        margin-left: 4px;
 
         cursor: pointer;
+
+        @media screen and (min-width:$desktop) {
+            margin-left: 4px;
+        }
     }
 }
