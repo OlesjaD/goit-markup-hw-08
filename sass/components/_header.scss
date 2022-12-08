@@ -19,6 +19,11 @@
         letter-spacing: 0.02em;
         color: var(--primary-text-color);
 
+    @media screen and (min-width:$desktop) {
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+
         & .item{
             margin-bottom: 10px;
         }
@@ -58,8 +63,6 @@
 
         & .link {
             display: flex;
-            padding-top: 32px;
-            padding-bottom: 32px;
         }
 
         & .item+.item {

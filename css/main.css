@@ -114,9 +114,19 @@ textarea:focus-visible {
     letter-spacing: 0.02em;
     color: var(--primary-text-color);
   }
+}
+@media screen and (min-width: 768px) and (min-width: 1200px) {
+  .nav-address {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
+@media screen and (min-width: 768px) {
   .nav-address .item {
     margin-bottom: 10px;
   }
+}
+@media screen and (min-width: 768px) {
   .nav-address .link {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -138,10 +148,14 @@ textarea:focus-visible {
   .nav-address .link:focus, .nav-address .link:hover {
     color: var(--accent-color);
   }
+}
+@media screen and (min-width: 768px) {
   .nav-address .mail-nav {
     margin-right: 8px;
     fill: currentColor;
   }
+}
+@media screen and (min-width: 768px) {
   .nav-address .tel-nav {
     margin-right: 8px;
     fill: currentColor;
@@ -162,8 +176,6 @@ textarea:focus-visible {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    padding-top: 32px;
-    padding-bottom: 32px;
   }
   .nav-address .item + .item {
     margin-left: 30px;
@@ -196,8 +208,20 @@ textarea:focus-visible {
 }
 
 .header .logo {
-  padding-top: 24px;
-  padding-bottom: 25px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+@media (min-width: 768px) {
+  .header .logo {
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+}
+@media (min-width: 1200px) {
+  .header .logo {
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
 }
 .header .logo .logo-studio {
   color: #000000;
