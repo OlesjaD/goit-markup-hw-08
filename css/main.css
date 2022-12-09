@@ -614,20 +614,6 @@ textarea:focus-visible {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: #F5F4FA;
-  /*&__img {
-      width: 450px;
-      min-height: 460px;
-
-      @media screen and (min-width:$tablet){
-          width: 354px;
-          min-height: 574px;
-      }
-
-      @media screen and (min-width:$desktop){
-          width: 270px;
-          min-height: 260px;
-      }
-  }*/
 }
 @media screen and (min-width: 1200px) {
   .command {
@@ -703,7 +689,23 @@ textarea:focus-visible {
 @media screen and (min-width: 1200px) {
   .command__container1 {
     width: 270px;
-    min-height: 368px;
+    min-height: 428px;
+  }
+}
+.command__img {
+  width: 450px;
+  min-height: 460px;
+}
+@media screen and (min-width: 768px) {
+  .command__img {
+    width: 354px;
+    min-height: 374px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .command__img {
+    width: 270px;
+    min-height: 260px;
   }
 }
 

@@ -64,22 +64,22 @@
 
         @media screen and (min-width:$desktop){
             width: 270px;
-            min-height: 368px;
+            min-height: 428px;
         }
     }
 
-    /*&__img {
+    &__img {
         width: 450px;
         min-height: 460px;
         
         @media screen and (min-width:$tablet){
             width: 354px;
-            min-height: 574px;
+            min-height: 374px;
         }
 
         @media screen and (min-width:$desktop){
             width: 270px;
             min-height: 260px;
         }
-    }*/
+    }
 }

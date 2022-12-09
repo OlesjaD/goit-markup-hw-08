@@ -104,17 +104,17 @@
                 <h2 class="work__title">Чим ми займаємося</h2>
                 <ul class="work__box">
                     <li class="item work__item">
-                        <a class="work__link" href=""><img src="./images/img1.jpg" alt="Десктопні застосунки" width="370"
+                        <a class="work__link" href=""><img srcset="./images/work/img1_370@1x.jpg 1x, ./images/work/img1_740@2x.jpg 2x" src="./images/work/img1_370@1x.jpg" alt="Десктопні застосунки" width="370"
                                 height="294"></a>
                         <div class="work__overlay-text"><p>Десктопні додатки</p></div>
                     </li>
                     <li class="item work__item">
-                        <a class="work__link" href=""><img src="./images/img2.jpg" alt="Мобільні застосунки" width="370"
+                        <a class="work__link" href=""><img srcset="./images/work/img2_370@1x.jpg 1x, ./images/work/img2_740@2x.jpg 2x" src="./images/work/img2_370@1x.jpg" alt="Мобільні застосунки" width="370"
                                 height="294"></a>
                         <div class="work__overlay-text"><p>Мобільні додатки</p></div>
                     </li>
                     <li class="item work__item">
-                        <a class="work__link" href=""><img src="./images/img3.jpg" alt="Дизайнерські рішення" width="370"
+                        <a class="work__link" href=""><img srcset="./images/work/img3_370@1x.jpg 1x, ./images/work/img3_740@2x.jpg 2x" srcset="" src="./images/work/img3_740@2x.jpg" alt="Дизайнерські рішення" width="370"
                                 height="294"></a>
                         <div class="work__overlay-text"><p>Дизайнерські рішення</p></div>
                     </li>
@@ -126,7 +126,18 @@
                 <h2 class="work__title">Наша команда</h2>
                 <ul class="command__specialists">
                     <li class="command__container1 container1">
-                            <img class="command__img" src="./images/k1.jpg" alt="Product Designer" width="270" height="260">
+                            <img class="command__img" 
+                                srcset="
+                                    ./images/team/img1_270.jpg 270w, 
+                                    ./images/team/img1_540.jpg 540w, 
+                                    ./images/team/img1_354.jpg 354w, 
+                                    ./images/team/img1_708.jpg 708w, 
+                                    ./images/team/img1_450.jpg 450w, 
+                                    ./images/team/img1_900.jpg 900w
+                                "
+                                src="./images/team/img1_450.jpg" 
+                                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                                alt="Product Designer"/>
                             <div class="command__team">
                                 <h3 class="command__name">Ігор Дем'яненко</h3>
                                 <p class="command__profession" lang="en">Product Designer</p>
@@ -159,7 +170,17 @@
                             </div>
                     </li>
                     <li class="command__container1 container1">
-                            <img class="img" src="./images/k2.jpg" alt="Frontend Developer" width="270" height="260">
+                            <img class="command__img" 
+                                srcset="
+                                    ./images/team/img2_450.jpg 450w,
+                                    ./images/team/img2_900.jpg 900w,
+                                    ./images/team/img2_354.jpg 354w, 
+                                    ./images/team/img2_708.jpg 708w,
+                                    ./images/team/img2_270.jpg 270w, 
+                                    ./images/team/img2_540.jpg 540w"
+                                src="./images/team/img2_450.jpg"
+                                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100v"
+                                alt="Frontend Developer"/>
                             <div class="command__team">
                                 <h3 class="command__name">Ольга Рєпіна</h3>
                                 <p class="command__profession" lang="en">Frontend Developer</p>
@@ -192,7 +213,15 @@
                             </div>
                     </li>
                     <li class="command__container1 container1">
-                            <img class="img" src="./images/k3.jpg" alt="Marketing" width="270" height="260">
+                            <img class="command__img" srcset="
+                                ./images/team/img3_450.jpg 450w,
+                                ./images/team/img3_900.jpg 900w,
+                                ./images/team/img3_354.jpg 354w, 
+                                ./images/team/img3_708.jpg 708w,
+                                ./images/team/img3_270.jpg 270w, 
+                                ./images/team/img3_540.jpg 540w"
+                                src="./images/team/img3_450.jpg"
+                                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100v"  alt="Marketing"/>
                             <div class="command__team">
                                 <h3 class="command__name">Микола Тарасов</h3>
                                 <p class="command__profession" lang="en">Marketing</p>
@@ -225,7 +254,15 @@
                             </div>
                     </li>
                     <li class="command__container1 container1">
-                            <img class="img" src="./images/k4.jpg" alt="UI Designer" width="270" height="260">
+                            <img class="command__img" srcset="
+                                ./images/team/img4_450.jpg 450w,
+                                ./images/team/img4_900.jpg 900w,
+                                ./images/team/img4_354.jpg 354w, 
+                                ./images/team/img4_708.jpg 708w,
+                                ./images/team/img4_270.jpg 270w, 
+                                ./images/team/img4_540.jpg 540w"
+                                src="./images/team/img4_450.jpg"
+                                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100v" alt="UI Designer"/>
                             <div class="command__team">
                                 <h3 class="command__name">Михайло Єрмаков</h3>
                                 <p class="command__profession" lang="en">UI Designer</p>
