@@ -28,16 +28,64 @@
     height: 400px;
     max-width: 480px;
 
-    margin-left: auto;
-    margin-right: auto;
-    background-image: linear-gradient(to right,
-            rgba(47, 48, 58, 0.4),
-            rgba(47, 48, 58, 0.4)),
-        url(../images/Overlay.jpg);
     background-color: #C4C4C4;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    // mobile screen
+
+    background-image: linear-gradient(to right,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+        url(../images/hero/bg_m@1.jpg);
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image: linear-gradient(to right,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+        url(../images/hero/bg_m@2x.jpg);
+    }
+
+    // tablet screen
+
+    @media screen and (min-width: 481px) {
+        background-image: 
+            linear-gradient(to right,
+                rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)),
+            url(../images/hero/bg_t@1.jpg);
+
+        @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+            background-image: 
+                linear-gradient(to right,
+                        rgba(47, 48, 58, 0.4),
+                        rgba(47, 48, 58, 0.4)),
+                url(../images/hero/bg_t@2x.jpg);
+        }
+    }
+
+    // desktop screen
+
+    @media screen and (min-width: 769px) {
+        background-image: 
+            background-image: 
+                linear-gradient(to right,
+                    rgba(47, 48, 58, 0.4),
+                    rgba(47, 48, 58, 0.4)),
+                url(../images/hero/bg_d@1.jpg);
+
+        @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+            background-image: 
+                linear-gradient(to right,
+                    rgba(47, 48, 58, 0.4),
+                    rgba(47, 48, 58, 0.4)),
+                url(../../images/hero/bg_d@2x.jpg);
+        }
+    }
 
     @media screen and (min-width:$tablet) {
         max-width: 768px;
