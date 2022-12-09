@@ -32,7 +32,11 @@
     }
 }
 
-.menu {
+.portfolio .menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+
     padding: 20px 24px;
 
     .title-portfolio {
@@ -41,6 +45,8 @@
         line-height: 2;
         letter-spacing: 0.06em;
         color: var(--title-text-color);
+
+        margin-bottom: 4px;
     }
 
     .variety-portfolio {
